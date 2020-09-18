@@ -1,14 +1,14 @@
 # Site settings
-title:          GSoC-2020
-description:    "Blog for Google Summer of Code 2020"
-baseurl:        "/gsoc-2020"
+title:          Blog
+description:    "Blog for personal projects and activities"
+baseurl:        "/blog"
 url:            "https://paritosh97.github.io"
 
 # Author
 author:
   name:         Paritosh Sharma
   url:          https://paritosh97.github.io
-  email:        contact@iamparitoshsharma.me
+  email:        contact@paritosh-sharma.com
 
 # Build settings
 markdown:       kramdown
