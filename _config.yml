@@ -1,13 +1,13 @@
 # Site settings
 title:          Blog
 description:    "Blog for personal projects and activities"
-baseurl:        "/blog"
-url:            "https://paritosh97.github.io"
+baseurl:        ""
+url:            "https://blog.paritosh-sharma.com"
 
 # Author
 author:
   name:         Paritosh Sharma
-  url:          https://paritosh97.github.io
+  url:          https://paritosh-sharma.com
   email:        contact@paritosh-sharma.com
 
 # Build settings
