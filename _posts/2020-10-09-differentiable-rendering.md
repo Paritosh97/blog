@@ -1,8 +1,12 @@
-# Differentiable Rendering
+Since the past few months, I have been quite fascinated with Rendering in Computer Graphics.
 
-As I’ve started to pay more attention to machine learning, differentiable rendering is one topic that caught my attention and has been popping up with some frequency. My first thought was, “cooooool is this a new system for generating pixels that somehow can leverage machine learning?” After digging into the topic, this was immediately followed by disappointment, but the disappointment was ultimately replaced by a realistic excitement for the actual practical applications. So, what is differentiable rendering?
+> Rendering or image synthesis is the process of generating a photorealistic or non-photorealistic image from a 2D or 3D model by means of a computer program.
 
-Inverse graphics attempts to take sensor data and infer 3D geometry, illumination, materials, and motions such that a graphics renderer could realistically reproduce the observed scene. Renderers, however, are designed to solve the forward process of image synthesis. To go in the other direction, we propose an approximate differentiable renderer (DR) that explicitly models the relationship between changes in model parameters and image observations.
+However, mostly until now, we have been focused on forward rendering.
+
+[TODO]
+
+<!-- Inverse graphics attempts to take sensor data and infer 3D geometry, illumination, materials, and motions such that a graphics renderer could realistically reproduce the observed scene. Renderers, however, are designed to solve the forward process of image synthesis. To go in the other direction, we propose an approximate differentiable renderer (DR) that explicitly models the relationship between changes in model parameters and image observations.
 -OpenDR: An Approximate Differentiable Renderer (paper, tech talk)
 
 OpenDR can take color and vertices as input to produce pixels in an image and from those pixels, it retains derivatives such that it can determine exactly what inputs contributed to the final pixel colors. In this way, it can “de-render” an image back into colors and vertices.
@@ -20,4 +24,4 @@ This was a quick overview of differentiable rendering, which I hope was useful i
 RenderNet: A deep convolutional network for differentiable rendering from 3D shapes
 Inverse Problems in Computer Vision Using Adversarial Imagination Priors
 Differentiable Image Parameterizations
-Neural Scene De-rendering
+Neural Scene De-rendering -->
