@@ -2,16 +2,15 @@ Since the past few months, I have been quite fascinated with Rendering in Comput
 
 > Rendering or image synthesis is the process of generating a photorealistic or non-photorealistic image from a 2D or 3D model by means of a computer program.
 
-However, mostly until now, we have been focused on forward rendering.
+However, mostly until now, we have been focused on forward rendering. Inverse rendering aims to estimate physical attributes of a scene, e.g., reflectance, geometry, and lighting, from image(s). Renderers currently are not designed to solve this issue, and thus, we need a separate set of renderers known as "DIfferentiable Renderers" that can retain the derivatives to determine the attributes of a scene.
 
-[TODO]
+Several form of differentiable renderers exist such as,
+- Rasterizer
+- Ray Marching
+- Point-Based Techniques
+- Single Shaded Surface
 
-<!-- Inverse graphics attempts to take sensor data and infer 3D geometry, illumination, materials, and motions such that a graphics renderer could realistically reproduce the observed scene. Renderers, however, are designed to solve the forward process of image synthesis. To go in the other direction, we propose an approximate differentiable renderer (DR) that explicitly models the relationship between changes in model parameters and image observations.
--OpenDR: An Approximate Differentiable Renderer (paper, tech talk)
-
-OpenDR can take color and vertices as input to produce pixels in an image and from those pixels, it retains derivatives such that it can determine exactly what inputs contributed to the final pixel colors. In this way, it can “de-render” an image back into colors and vertices.
-
-OpenDR is “approximate” because there are discontinuities in rasterization, for example due to occlusion. This is just one form of differentiable render engine (a rasterizer), but other forms of DR exist including ray marching, point-based techniques, or even a single shaded surface. The single shaded surface case (imagine a full-screen quad) is perhaps easiest to understand, as it only requires propagating through the lighting and BRDF to get back to the inputs. So how is this useful?
+<!-- The single shaded surface case (imagine a full-screen quad) is perhaps easiest to understand, as it only requires propagating through the lighting and BRDF to get back to the inputs. So how is this useful?
 
 One use case for differentiable rendering is to compute a loss when training a machine learning model. For example, in the SVBRDF reconstruction paper, the network produces four output texture maps (diffuse albedo, specular albedo, roughness, normal), but computing the loss in those four spaces individually was insufficient. The problem was that a comparison between the target normals (for example) and the inferred normals did not capture the perceptual loss that is visible when the texture is actually rendered as a lit surface. A differentiable renderer was used to compute the loss in rendered image space; the loss was then propagated back to the four texture inputs and from there, back propagation was applied to train the network.
 
