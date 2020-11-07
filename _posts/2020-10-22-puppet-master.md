@@ -1,6 +1,6 @@
-I have been fascinated with Physics-based animation for a while now. Particularly with [Soft Body Mechainics](https://paritosh-sharma.com/mass-spring-simulator/). I started learning mass-spring simulators a few months ago. A couple of days ago, I came across a fascinating research area in the field of physics-based animation and robotics which deals with the simulation of real-world puppets. 
+I have been fascinated with Physics-based animation for a while now. Particularly with [Soft Body Mechainics](https://paritosh-sharma.com/mass-spring-simulator/){:target="_blank" rel="noopener"}. I started learning mass-spring simulators a few months ago. A couple of days ago, I came across a fascinating research area in the field of physics-based animation and robotics which deals with the simulation of real-world puppets. 
 
-A group of scientists at ETH Zurich introduced us to a robotic system that simulates real-world string puppets or marionettes. [“PuppetMaster”](http://crl.ethz.ch/papers/puppetMaster.pdf) can operate simple puppets like a puppy, snake, or even a Chinese dragon! The goal of the project can be summarized as follows.
+A group of scientists at ETH Zurich introduced us to a robotic system that simulates real-world string puppets or marionettes. [“PuppetMaster”](http://crl.ethz.ch/papers/puppetMaster.pdf){:target="_blank" rel="noopener"} can operate simple puppets like a puppy, snake, or even a Chinese dragon! The goal of the project can be summarized as follows.
 
 > To Generate highly dynamic motion trajectories for string-driven physical systems using dexterous robots as puppeteers.
 
